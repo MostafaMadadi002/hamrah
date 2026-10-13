@@ -6,6 +6,7 @@ import { ConsultationModal } from './components/ConsultationModal';
 import { ScrollToTop } from './components/ScrollToTop';
 import { RouteProgressBar } from './components/RouteProgressBar';
 import { PageLoader } from './components/PageLoader';
+import { CustomCursor } from './components/CustomCursor';
 
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const AboutView = lazy(() => import('./views/AboutView').then(m => ({ default: m.AboutView })));
@@ -17,6 +18,7 @@ const GalleryView = lazy(() => import('./views/GalleryView').then(m => ({ defaul
 const MainLayout: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300">
+      <CustomCursor />
       <RouteProgressBar />
       <ScrollToTop />
       {/* Sticky floating bottom/top navbar is inside Header */}

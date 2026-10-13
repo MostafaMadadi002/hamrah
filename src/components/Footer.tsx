@@ -22,6 +22,8 @@ export const Footer: React.FC = () => {
                   alt="Hamrah Tech Logo"
                   className="w-full h-full object-contain p-0.5"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <span className="text-2xl font-black tracking-tight text-[#0B1F3A] dark:text-[#F3F4F6]">
